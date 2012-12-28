@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.author.name }}">
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <title>{{ page.title }}</title>
+    
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/styles.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygment_trac.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/webkit-scrollbar.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/javascripts/webkit-scrollbar.js"></script>
+    
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.tagline }}</p>
+        <p class="view"><a href="{{ HOME_PATH }}">Home</a><br>
+          <a href="/archive.html">Archive</a><br>
+          <a href="/tags.html">Tags</a><br>
+          <a href="/about.html">About</a></p>
+        <h3>Follow me</h3>
+        <p class="view"><a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a><br>
+        <a href="https://github.com/{{ site.author.github }}">Github</a></p>
+
+
+      </header>
+      <section>
+        {{ content }}
+      </section>
+      <footer>
+        <p><small>&copy; 2012  <a href="mailto:{{ site.author.email }}"> {{ site.author.name }}</a><br>
+            Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> &mdash;
+            Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ ASSET_PATH }}/javascripts/scale.fix.js"></script>
+    
+    {% include JB/analytics %}
+  </body>
+</html>
