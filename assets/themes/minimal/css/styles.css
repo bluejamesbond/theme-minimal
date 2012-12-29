@@ -2,7 +2,7 @@
 
 body {
   padding:50px;
-  font:15px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
 }
@@ -22,6 +22,10 @@ header h1 {
 
 header h3 {
     margin:0px 0 5px;
+}
+
+ul {
+	list-style: none;
 }
 
 p, ul, ol, table, pre, dl {
@@ -307,7 +311,6 @@ footer {
   }
 }
 
-/* @group .post-meta */
 
 .post-meta {
   float: left;
@@ -336,10 +339,6 @@ footer {
       display: block;
     }
 
-/* @end */
-
-/* @group .post-title */
-
 .post-title {
     font-size: 25px;
     position: relative;
@@ -355,4 +354,37 @@ footer {
   left: 0px;
 }
 
+.page h1 {
+	font-size: 58px;
+	font-weight: normal;
+	color: rgb(168, 168, 168);
+}
 
+.archive-date {
+	font-size: 13px;
+}
+
+.archive-title {
+	font-size: 18px;
+}
+
+.tag_box {
+    overflow: hidden;
+    padding: 5px 5px;
+}
+
+.tag_box.inline li {
+    float: left;
+}
+
+.tag_box a {
+    padding: 3px 6px;
+    margin: 2px;
+    background: rgb(241, 241, 241);
+    border-radius: 3px;
+}
+
+.tag_box a span {
+    vertical-align: super;
+    font-size: 0.8em;
+}
