@@ -32,7 +32,10 @@
 		{% if site.author.twitter %}
 			<a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a><br>
 		{% endif %}
-        <a href="https://github.com/{{ site.author.github }}">Github</a></p>
+		{% if site.author.github %}
+			<a href="https://github.com/{{ site.author.github }}">Github</a><br>
+		{% endif %}
+		</p>
 	
 
 
