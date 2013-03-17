@@ -37,7 +37,7 @@
         {{ content }}
       </section>
       <footer>
-        <p><small>&copy; 2012  <a href="mailto:{{ site.author.email }}"> {{ site.author.name }}</a><br>
+	  <p><small>&copy; {{ site.time | date: '%Y' }} <a href="mailto:{{ site.author.email }}"> {{ site.author.name }}</a><br>
             Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> &mdash;
             Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
