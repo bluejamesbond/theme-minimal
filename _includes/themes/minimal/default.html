@@ -28,8 +28,12 @@
           <a href="/tags.html">Tags</a><br>
           <a href="/about.html">About</a></p>
         <h3>Follow me</h3>
-        <p class="view"><a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a><br>
+		<p class="view">
+		{% if site.author.twitter %}
+			<a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a><br>
+		{% endif %}
         <a href="https://github.com/{{ site.author.github }}">Github</a></p>
+	
 
 
       </header>
