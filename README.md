@@ -5,7 +5,7 @@ A minimal theme for Jekyll Bootstrap based on [minimal](https://github.com/order
 ## Installation
 
 Just run
-`rake theme:install git="https://github.com/swaeku/jekyll-theme-minimal.git"`
+`rake theme:install git="https://github.com/bluejamesbond/theme-minimal.git"`
 
 And you're done.
 
