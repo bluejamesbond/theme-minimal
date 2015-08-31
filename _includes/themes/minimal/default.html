@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ site.author.name }}">
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
     
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/styles.css">
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygment_trac.css">
@@ -24,32 +24,32 @@
     {% if site.author.image %}
         <img height="230" style='border-radius: 6px;' src="{{ site.author.image }}" width="230">
     {% endif %}
-        <h1>{{ site.title }}</h1>
+        <h1>{{ site.name }}</h1>
         <p>{{ site.tagline }}</p>
         <p class="view"><a href="{{ HOME_PATH }}">Home</a><br>
           <a href="{{ HOME_PATH }}archive.html">Archive</a><br>
           <a href="{{ HOME_PATH }}tags.html">Tags</a></p>
         <h3>Follow me</h3>
-    <p class="view">
-    {% if site.author.twitter %}
-      <a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a><br>
-    {% endif %}
-    {% if site.author.feedburner %}
-      <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}">RSS</a><br>
-    {% endif %}
-    {% if site.author.github %}
-      <a href="https://github.com/{{ site.author.github }}">Github</a><br>
-    {% endif %}
-    {% if site.author.linkedin %}
-      <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a><br>
-    {% endif %}
-    </p>
+		<p class="view">
+		{% if site.author.twitter %}
+			<a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a><br>
+		{% endif %}
+		{% if site.author.feedburner %}
+			<a href="http://feeds.feedburner.com/{{ site.author.feedburner }}">RSS</a><br>
+		{% endif %}
+		{% if site.author.github %}
+			<a href="https://github.com/{{ site.author.github }}">Github</a><br>
+		{% endif %}
+		{% if site.author.linkedin %}
+			<a href="http://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a><br>
+		{% endif %}
+		</p>
       </header>
       <section>
         {{ content }}
       </section>
       <footer>
-    <p><small>&copy; {{ site.time | date: '%Y' }} <a href="mailto:{{ site.author.email }}"> {{ site.author.name }}</a><br>
+	  <p><small>&copy; {{ site.time | date: '%Y' }} <a href="mailto:{{ site.author.email }}"> {{ site.author.name }}</a><br>
             Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> &mdash;
             Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
